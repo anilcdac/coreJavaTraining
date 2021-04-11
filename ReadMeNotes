@@ -69,7 +69,6 @@ public class Secondclass {
         System.out.println("I am in second class method");
     }
 
-
     public static void main(String[] args) {
 
     }
