@@ -418,6 +418,7 @@ package demopack;
 
 public class assignment4RevPyramid36912 {
 
+
     public static void main(String[] args) {
 //        nested loops
         int k =3;
@@ -441,3 +442,91 @@ public class assignment4RevPyramid36912 {
 12	15	18
 21	24	27	30
 */
+===
+
+20
+Interface - class
+Will have methods but not body
+
+21
+Classes should define and implement methods present in interfaces
+
+CentralTraffic.java is interface
+AustralianTraffic.java is class
+ContinentalTraffic.java is interface
+
+Interfaces-      public int a = 4;   // public access modifier  , all variables default public in interface
+
+==
+22. Interfaces code
+package coreJavaTraining;
+
+import demopack.CentralTraffic;
+
+public class AustralianTraffic implements CentralTraffic, ContinentalTraffic {
+
+        public static void main(String[] args) {
+            CentralTraffic a =  new AustralianTraffic();
+            a.redStop();
+            a.FlashYellow();
+            a.greenGo();
+
+
+//            walkonsymbol() method is created in AustralianTraffic, so need to create new object for that, cant use central traffic object a
+            AustralianTraffic at = new AustralianTraffic();
+            at.walkonsymbol();
+
+            ContinentalTraffic ct = new AustralianTraffic();
+            ct.Trainsymbol();
+
+        }
+
+    @Override
+    public void greenGo() {
+        System.out.println("Green Go implemetation");
+    }
+
+    @Override
+    public void redStop() {
+        System.out.println("Red Stop implemetation");
+
+    }
+
+    @Override
+    public void FlashYellow() {
+        System.out.println("Flash Yellow implemetation");
+
+
+    }
+
+    public void walkonsymbol(){
+        System.out.println("Walking");
+
+    }
+
+    @Override
+    public void Trainsymbol() {
+
+    }
+}
+
+==
+package demopack;
+
+public interface CentralTraffic {
+     public int a = 4;   // public access modifier  , all variables default public in interface
+    public void greenGo();
+    public void redStop();
+    public void FlashYellow();
+}
+==
+package coreJavaTraining;
+
+public interface ContinentalTraffic {
+
+    public void Trainsymbol();
+}
+==
+
+23.
+
