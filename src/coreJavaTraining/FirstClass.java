@@ -11,10 +11,14 @@ public class FirstClass {
 
     public static void main(String[] args) {
       FirstClass fn = new FirstClass();
-
+      fn.getData();
 
         //        System.out.println(a);
         System.out.println("Hello World");
 
     }
 }
+
+//Result
+//        I am in method
+//        Hello World
