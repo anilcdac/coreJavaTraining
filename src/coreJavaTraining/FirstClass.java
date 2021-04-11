@@ -2,6 +2,7 @@ package coreJavaTraining;
 
 public class FirstClass {
 
+    int b= 4;
     //Methods
     public void getData() {
 //        static int a = 4;
@@ -12,6 +13,7 @@ public class FirstClass {
     public static void main(String[] args) {
       FirstClass fn = new FirstClass();
       fn.getData();
+      System.out.println(fn.b);
 
         //        System.out.println(a);
         System.out.println("Hello World");
@@ -20,5 +22,6 @@ public class FirstClass {
 }
 
 //Result
-//        I am in method
+//I am in method
+//4
 //        Hello World
