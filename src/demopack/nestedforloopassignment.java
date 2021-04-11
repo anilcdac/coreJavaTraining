@@ -10,6 +10,8 @@ public class nestedforloopassignment {
             for(int j=1; j<=4-i; j++)  // inner loop
             {
                 System.out.print(k);
+                System.out.print("\t");
+
                 k++;
 
             }
@@ -19,9 +21,9 @@ public class nestedforloopassignment {
 }
 
 /*Result
-1234
-567
-89
+1	2	3	4
+5	6	7
+8	9
 10
 
 */
