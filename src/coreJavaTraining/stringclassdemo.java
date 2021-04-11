@@ -15,5 +15,16 @@ How many ways string can be defined
 // now this object ab can perform all the string manipulation on this string Hello
 //
 
+
+
+        String a = "hello" ;  //String literal
+        String b = "hello" ;  //String literal
+//        as object a is already having "hello" string; it will simply point "hello" string for b.
+
+//        here we are explicitly forcing to create object for this class b, though duplicate already present, still it will create
+        String a = new String("hello");
+        String b = new String("hello");
+
+
     }
 }
