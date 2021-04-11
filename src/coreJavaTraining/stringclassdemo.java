@@ -1,30 +1,42 @@
 package coreJavaTraining;
 
+import java.util.Locale;
+
 public class stringclassdemo {
 
     public static void main(String[] args) {
-/*String is class in java
-String: Its one of prebuilt class in java    - Interview
+//String is class in java
+        String a = "javatraining";  //String literal
 
-How many ways string can be defined
-1] String literal
-2. By creating object of string  */
+        System.out.println(a.charAt(2));
+        System.out.println(a.indexOf("l"));
+        System.out.println(a.substring(3, 6));
+        System.out.println(a.substring(5));
+        System.out.println(a.concat("rahul teachers"));
+//        a.length
+        a.trim();  // remove whitespace
+        a.toUpperCase();
+        a.toLowerCase(Locale.ROOT);
 
-        String a = "hello" ;  //String literal
-        String ab = new String("hello");   // with String class
-// now this object ab can perform all the string manipulation on this string Hello
-//
+        //Split
+        String arr[]= a.split("t");
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
 
-
-
-        String a = "hello" ;  //String literal
-        String b = "hello" ;  //String literal
-//        as object a is already having "hello" string; it will simply point "hello" string for b.
-
-//        here we are explicitly forcing to create object for this class b, though duplicate already present, still it will create
-        String a = new String("hello");
-        String b = new String("hello");
-
+//        replace
+        System.out.println(a.replace("t","s"));  //javasraining
 
     }
 }
+/*
+Result
+v
+-1
+atr
+raining
+javatrainingrahul teachers
+java
+raining
+javasraining
+
+ */
