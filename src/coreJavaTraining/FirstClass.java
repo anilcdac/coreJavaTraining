@@ -3,10 +3,10 @@ package coreJavaTraining;
 public class FirstClass {
 
     //Methods
-    public int getData() {
+    public String getData() {
 //        static int a = 4;
         System.out.println("I am in method");
-        return 2;
+        return "hello";
     }
 
     public static void main(String[] args) {
