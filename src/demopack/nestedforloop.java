@@ -5,10 +5,10 @@ public class nestedforloop {
 
     public static void main(String[] args) {
 //        nested loops
-        for(int i=0; i <10; i++)  //outer for loop- this block will loop for 4 times
+        for(int i=0; i <4; i++)  //outer for loop- this block will loop for 4 times
         {
             System.out.println("Outer loop started");
-            for(int j=0; j <10; j++)  // inner loop
+            for(int j=0; j <4; j++)  // inner loop
             {
                 System.out.println("inner loop");
             }
