@@ -1,3 +1,4 @@
+Course: Core Java for Automation Testers + Interview Programs
 
 3] Syntax for creating object
       FirstClass fn = new FirstClass();
@@ -106,3 +107,19 @@ public class FirstClass {
 //4
 //        Hello World
 ===
+
+
+7a] Two ways of defining string object - Interview
+    /*String is class in java
+    String: Its one of prebuilt class in java    - Interview
+
+    How many ways string can be defined
+    1] String literal
+    2. By creating object of string  */
+
+    String a = “hello”   //String literal
+    String ab = new String(“hello”);   // with String class
+    // now this object ab can perform all the string manipulation on this string Hello
+    //
+
+
