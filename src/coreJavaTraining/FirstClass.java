@@ -12,6 +12,9 @@ public class FirstClass {
 
     public static void main(String[] args) {
       FirstClass fn = new FirstClass();
+      Secondclass sn = new Secondclass();
+      sn.setData();
+
       fn.getData();
       System.out.println(fn.b);
 
@@ -22,6 +25,7 @@ public class FirstClass {
 }
 
 //Result
+//I am in second class method
 //I am in method
 //4
 //        Hello World
