@@ -12,17 +12,32 @@ public class ArraysDemo {
         a[1][0]=3;
         a[1][1]=4;
         a[1][2]=7;
-        int b[][] = {{2,4,5},{3,4,7}}; // way2 of writing
+//        int b[][] = {{2,4,5},{3,4,7}}; // way2 of writing
 
-        System.out.println(a[1][0]);
-        System.out.println("");
-        System.out.println(b[1][0]);
+
+        for (int i=0;i<2;i++) //row
+        {
+            for(int j=0;j<3;j++) // columns
+            {
+                System.out.println(a[i][j]);
+            }
+        }
+
+
+//        System.out.println(a[1][0]);
+//        System.out.println("");
+//        System.out.println(b[1][0]);
 
     }
 }
 
 /*
  result
+2
+4
+5
 3
+4
+7
 */
 
