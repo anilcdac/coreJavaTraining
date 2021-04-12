@@ -451,7 +451,7 @@ Will have methods but not body
 21
 Classes should define and implement methods present in interfaces
 
-CentralTraffic.java is interface
+CentralTraffic.java is interfacea
 AustralianTraffic.java is class
 ContinentalTraffic.java is interface
 
@@ -528,5 +528,140 @@ public interface ContinentalTraffic {
 }
 ==
 
-23.
+23. Abstract class
+ParentAirCraft.java is Abstract Class
+ChildEmirites.java  is child class which extends ParentAirCraft and declare bodyColor method
 
+
+
+
+23 Abstract class:
+Abstraction is a process of hiding the implementation details from the user.
+ The user will have information on what the object does instead of how it does it.
+
+
+
+Unlike interfaces, this Abstract class can have methods (Concrete) which have implementation as well.
+So, with Abstract class only partial Abstraction is achieved.
+
+Difference between Abstract class and Interfaces
+
+Interfaces:
+1] Interfaces contains only abstract methods
+2] Access Specifiers for methods in interfaces must be public
+3] Variables defined must be public, static, final
+4] To implement an interface, we use implements keyword
+
+Abstract Class:
+1] Abstract class can contain abstract methods, concrete methods or both
+2] Except private we can have any access specifier for methods in abstract class (Protected)
+3] Except private variables, we  can have any access specifiers
+4] To implement an Abstract we use keyword extends
+
+===
+23. Abstract class
+ParentAirCraft.java is Abstract Class
+ChildEmirites.java  is child class which extends ParentAirCraft and declare bodyColor method
+
+package demopack;
+
+public abstract class ParentAirCraft {
+
+   public void engine()
+   {
+       System.out.println("Follow Engine Guidelines");
+   }
+
+   public void safetyGuidelines()
+   {
+       System.out.println("Follow Safety Guidelines");
+   }
+
+   public abstract void bodyColor();
+
+}
+
+// private is not allowed for methods in abstract class
+===
+package demopack;
+
+public class ChildEmirites extends ParentAirCraft{
+   public void main(String[] args)
+   {
+       ChildEmirites c = new ChildEmirites();
+       c.engine();
+       c.safetyGuidelines();
+       c.bodyColor();
+
+
+   }
+
+   @Override
+   public void bodyColor() {
+       System.out.println("Red color on the body");
+   }
+}
+
+
+
+
+===
+
+Section 7 Importance of Inheritance
+
+24: Usage
+
+package coreJavaTraining;
+
+public class parentClassDemo {
+       String color = "red";
+
+       public void Gear()
+       {
+           System.out.println("gear code is implemented");
+       }
+   public void breaks()
+   {
+       System.out.println("breaks code is implemented");
+   }
+
+   public void audioSystem()
+   {
+       System.out.println("audioSystem code is implemented");
+   }
+
+   public static void main(String[] args) {
+
+   }
+
+
+}
+==
+package coreJavaTraining;
+
+public class childClassDemo extends parentClassDemo {
+   public void engine()
+   {
+       System.out.println("New Engine");
+   }
+
+   public void color()
+   {
+       System.out.println(color);
+
+   }
+
+   public static void main(String[] args) {
+       childClassDemo cd = new childClassDemo();
+       cd.color();
+       cd.Gear();
+   }
+
+
+}
+
+
+//color variable coming from parentclass
+==
+
+25.
