@@ -14,7 +14,7 @@ public class parentClassDemo {
 
     public void audioSystem()
     {
-        System.out.println("audioSystem code is implemented");
+        System.out.println("audioSystem parent code is implemented");
     }
 
     public static void main(String[] args) {
