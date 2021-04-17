@@ -1098,3 +1098,127 @@ I am in the parameterized single constructor: Hello
 If no constructor is written for object, it will consider default constructor
 If if constructor is written for parameterized but not for default, then it will show error and ask to write default constructor - 44- 9 min point
 ==
+
+Section 13- Importance of Super Keyword
+46-
+
+13 Super Keyword
+
+
+package coreJavaTraining;
+
+public class superParentDemo {
+    String name = "Rahul";
+
+    public static void main(String[] args) {
+
+    }
+}
+
+
+package coreJavaTraining;
+
+public class superChildDemo extends superParentDemo{
+
+ //  String name = "QAAcademy";
+   public void getStringData()
+   {
+       System.out.println(name);
+       System.out.println(super.name);
+
+   }
+
+   public static void main(String[] args) {
+       superChildDemo cd = new superChildDemo();
+       cd.getStringData();
+   }
+}
+===
+Result:
+Rahul
+Rahul
+===
+
+
+
+package coreJavaTraining;
+
+public class superChildDemo extends superParentDemo{
+
+   String name = "QAAcademy";
+   public void getStringData()
+   {
+       System.out.println(name);
+       System.out.println(super.name);
+
+   }
+
+   public static void main(String[] args) {
+       superChildDemo cd = new superChildDemo();
+       cd.getStringData();
+   }
+}
+
+
+===
+Result:
+QAAcademy
+Rahul
+===
+If variable is not present in current class, it will print value from parent for both.
+==
+
+47 - Usage of Super keyword
+package coreJavaTraining;
+
+public class superChildDemo extends superParentDemo{
+
+    String name = "QAAcademy";
+    public void getStringData()
+    {
+        System.out.println(name);
+        System.out.println(super.name);
+
+    }
+
+    public static void main(String[] args) {
+        superChildDemo cd = new superChildDemo();
+        cd.getStringData();
+        cd.getData();
+    }
+}
+
+/*
+QAAcademy
+Rahul
+I am from parent class
+ */
+
+ =
+48 - this keyword  - global variable can be accessed in method via this. keyword
+
+package coreJavaTraining;
+
+public class thisDemo {
+
+    int a= 2;
+
+    public void getData()
+    {
+        int a = 3;
+        System.out.println(a);  // 3
+        System.out.println(this.a); // 2
+
+        //interview - local+ global
+        int b = a+ this.a;
+        System.out.println(b);
+
+        //this refers to current object - object scope lies in class level
+    }
+
+    public static void main(String[] args) {
+        thisDemo td = new thisDemo();
+        td.getData();
+    }
+}
+
