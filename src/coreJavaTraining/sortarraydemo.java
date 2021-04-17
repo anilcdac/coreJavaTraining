@@ -10,7 +10,6 @@ public class sortarraydemo {
 //       swap without temp variable
         a = a+b; //a = 9
         b=  a-b; //b = 5
-
         a= a-b; // a = 4
 
 
